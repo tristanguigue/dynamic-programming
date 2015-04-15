@@ -31,6 +31,9 @@ def cost(word):
     else:
         return len(word)
 
+# The cache to memorize partial solutions
+cache = {}
+
 
 def split(input_string, start):
     """The recrusive function, it tries to split the substring starting at
@@ -44,6 +47,9 @@ def split(input_string, start):
     Returns:
         A tupple form of the partial solution and its cost
     """
+    # we have already calculated the optimal solution from the point
+    if start in cache:
+        return cache[start]
 
     # the substring to split
     substring = input_string[start:]
@@ -79,8 +85,9 @@ def split(input_string, start):
 
             min_cost = current_cost
 
+    cache[start] = min_string, min_cost
     return min_string, min_cost
 
 
-print split("carlosisnice", 0)
-# print ('carlos is nice', 8)
+print split("carlosthinksthattheweatherisnice", 0)
+# print ('carlos thinks that the weather is nice', 12)
