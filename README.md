@@ -43,7 +43,7 @@ Input: "carlosthinksthattheweatherisnice"
 Output: "carlos thinks that the weather is nice"
 
 #### [Counting Paths](https://github.com/tristanguigue/dynamic-programing/tree/master/count_path)
-Count the number of possible paths from (x1, y1) to (x2, y2) by moving right or down
+Count the number of possible paths from `(x1, y1)` to `(x2, y2)` by moving right or down
 
 Input: `(0, 0, 1, 1)`
 
