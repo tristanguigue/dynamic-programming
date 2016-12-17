@@ -14,13 +14,13 @@ def count_paths(x1, y1, x2, y2):
     if x1 == x2 and y1 == y2:
         return 1
 
-    if (x1, x2) in cache:
-        return cache[x1, x2]
+    if (x1, y1) in cache:
+        return cache[x1, y1]
 
     # move right and down
     count = count_paths(x1 + 1, y1, x2, y2) + count_paths(x1, y1 + 1, x2, y2)
 
-    cache[x1, x2] = count
+    cache[x1, y1] = count
 
     return count
 
