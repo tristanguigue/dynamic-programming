@@ -1,9 +1,9 @@
-## A Collection of Dynamic Programing Problems
+## A Collection of Dynamic Programming Problems
 This is a collection of interesting algorithm problems written first recursively, then using memoization and finally a bottom-up approach.This allows to well capture the logic of dynamic programming.
 
-### Dynamic Programing
+### Dynamic Programming
 
-The idea behind dynamic programing as describe in The Algorithm Design Manual (S. Skiena):
+The idea behind dynamic programming as describe in The Algorithm Design Manual (S. Skiena):
 - Find the recursion in the problem
 - Build a table of possible values
 - Find the right order to evaluate the results so that partial results are available when needed.
@@ -23,18 +23,18 @@ We can most of the time optimize the space and avoid storing all the partial res
 
 ### Collection
 
-For each problem, a simple recursion is presented together with a top down and a bottom-up approach. This allows to have a clear view of the logic of dynamic programing.
+For each problem, a simple recursion is presented together with a top down and a bottom-up approach. This allows to have a clear view of the logic of dynamic programming.
 
 The simple recursion is very inefficient obviously and very limited in use, it is there for illustration only.
 
-#### [Fibonnaci](https://github.com/tristanguigue/dynamic-programing/tree/master/fibonacci)
+#### [Fibonnaci](https://github.com/tristanguigue/dynamic-programming/tree/master/fibonacci)
 Finding the nth fibonacci number
 
 Input: `4`
 
 Output: `3`
 
-#### [String Partition](https://github.com/tristanguigue/dynamic-programing/tree/master/partition_string)
+#### [String Partition](https://github.com/tristanguigue/dynamic-programming/tree/master/partition_string)
 The partition string problem retrieving the original string whose spaces were removed.
 We are given a list of words belonging to a dictionary
 
@@ -42,14 +42,14 @@ Input: "carlosthinksthattheweatherisnice"
 
 Output: "carlos thinks that the weather is nice"
 
-#### [Counting Paths](https://github.com/tristanguigue/dynamic-programing/tree/master/count_path)
+#### [Counting Paths](https://github.com/tristanguigue/dynamic-programming/tree/master/count_path)
 Count the number of possible paths from `(x1, y1)` to `(x2, y2)` by moving right or down
 
 Input: `(0, 0, 1, 1)`
 
 Output : `2`
 
-#### [Largest Increasing Sequence](https://github.com/tristanguigue/dynamic-programing/tree/master/increasing_sequence)
+#### [Largest Increasing Sequence](https://github.com/tristanguigue/dynamic-programming/tree/master/increasing_sequence)
 Find the largest non-continuous increasing sequence from an array
 
 Input: `[1, 6, 7, 4, 6, 1, 3, 4, 6, 19, 12, 14, 35, 66]`
