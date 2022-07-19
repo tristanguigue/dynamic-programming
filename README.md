@@ -1,5 +1,5 @@
 ## A Collection of Dynamic Programming Problems
-This is a collection of interesting algorithm problems written first recursively, then using memoization and finally a bottom-up approach.This allows to well capture the logic of dynamic programming.
+This is a collection of interesting algorithm problems written first recursively, then using memorization and finally a bottom-up approach. This allows to well capture the logic of dynamic programming.
 
 ### Dynamic Programming
 
@@ -8,17 +8,17 @@ The idea behind dynamic programming as describe in The Algorithm Design Manual (
 - Build a table of possible values
 - Find the right order to evaluate the results so that partial results are available when needed.
 
-There are two main approaches in the implementation of dynamic programming : 
+There are two main approaches to the implementation of dynamic programming : 
 
 #### Top Down - Memoization
-When the recursion does a lot of unecessary calculation, an easy way to solve this is to cache the results and to check before executing the call if the result is already in the cache.
+When the recursion does a lot of unnecessary calculations, an easy way to solve this is to cache the results and to check before executing the call if the result is already in the cache.
 
 #### Bottom-Up
 A better way to do this is to get rid of the recursion all-together by evaluating the results in the right order and building the array as we iterate. The partial results are available when needed if the iteration is done in the right order.
 
 We have to identify and initialize the boundary conditions such as when we start the iteration, those are available.
 
-We can most of the time optimize the space and avoid storing all the partial results along the way by storing only the stricly necessary partials. 
+We can most of the time optimize the space and avoid storing all the partial results along the way by storing only the strictly necessary partials. 
 
 
 ### Collection
